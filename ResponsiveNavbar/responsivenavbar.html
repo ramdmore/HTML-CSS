@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!--FontAwesome icons-->
+    <link rel="stylesheet" 
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>NAVBAR</title>
+    
+</head> 
+<body>
+    <nav class="nav-wrapper cyan darken-4">
+        <div class="container">
+            <a href="#" class="brand-logo">NAVBAR</a>
+            <a href="#" class="sidenav-trigger" data-target="mob">
+                <i class="material-icons">menu_open</i>
+            </a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#" class="btn-floating pulse yellow"><i class="material-icons">notifications</i></a></li>
+                <li><a href="#" class="btn-floating pulse blue"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" class="btn-floating pulse orange"><i class="fab fa-instagram"></i></a></li>
+
+            </ul>
+
+            <ul class="sidenav" id="mob">
+                <h4 class="black-text center">NAVBAR</h4>
+                <li><a href="#" class="waves-effect waves-light btn cyan darken-4">HOME</a></li>
+                <li><a href="#" class="waves-effect waves-light btn cyan darken-4">ABOUT</a></li>
+                <li><a href="#" class="waves-effect waves-light btn cyan darken-4">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    </nav>
+    <!-- compiled and min Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        })
+    </script>
+   
+</body>
+</html>

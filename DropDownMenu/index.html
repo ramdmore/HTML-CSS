@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    
+  <title>Dropdown-Menu</title>
+
+  <!--Style-->
+  <style>
+    header{
+        background-image: url(1.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+  </style>
+    
+</head>
+
+<body>
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#" class="brand-logo">DD_MENU</a>
+                <ul class="right">
+                    <li><a href="#" class="btn transparent">HOME</a></li>
+                    <li><a href="#" class="dropdown-trigger btn transparent" data-target="dd-menu1">MENU 1</a></li>
+                    <li><a href="#" class="dropdown-trigger transparent" data-target="dd-menu2">MENU 2</a></li>
+                    <li><a href="#" class="btn transparent">CONTACT</a></li>
+                </ul>
+
+                <ul class="dropdown-content" id="dd-menu1">
+                    <li><a href="#" class="black-text center">sub1</a></li>
+                    <li><a href="#" class="black-text center">sub2</a></li>
+                    <li><a href="#" class="black-text center">sub3</a></li>
+                    <li class="divider"><a href="#"></a></li>
+                    <li><a href="#" class="black-text center">sub4</a></li>
+                </ul>
+                <ul class="dropdown-content" id="dd-menu2">
+                    <li><a href="#" class="black-text center">sub7</a></li>
+                    <li class="divider"><a href="#"></a></li>
+                    <li><a href="#" class="black-text center">sub8</a></li>
+                    <li><a href="#" class="black-text center">sub9</a></li>
+                    <li><a href="#" class="black-text center">sub10</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+  
+
+<!--Compiled and minified Jquery-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+  <script>
+    $(document).ready(function(){
+        $('.dropdown-trigger').dropdown();
+    })
+  </script>
+</body>
+</html>

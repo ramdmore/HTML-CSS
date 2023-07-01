@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-image: url(../Side_nav_bar/2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 100px;
+
+}
+
+.nav-bar{
+    background: rgb(29,29,29);
+    text-align: center;
+
+}
+
+ul{
+    display: inline-flex;
+    list-style: none;
+    color: #000;
+}
+
+ul li{
+    width: 120px;
+    margin: 7px;
+    padding: 17px;
+    transition: 0.4s ease;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 11px 13px ;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: black;
+    border-radius: 6px;
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+    
+}
